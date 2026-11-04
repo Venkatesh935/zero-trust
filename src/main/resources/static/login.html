@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in | Zero Trust</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/common.js" defer></script>
+    <script src="/js/login.js" defer></script>
+</head>
+<body class="auth-body" data-page="login">
+<div class="auth-wrap">
+    <section class="auth-hero">
+        <div class="brand">
+            <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><div class="brand-name">ZERO TRUST</div><div class="brand-tag">Website Security Platform</div></div>
+        </div>
+        <h1>Never trust.<br><span>Always verify.</span></h1>
+        <p>Website security assessment and continuous monitoring for authorized targets.</p>
+        <ul class="auth-points">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>HTTPS, TLS certificate, security header and cookie assessment</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Transparent 0-100 risk scoring with recommendations</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Scheduled monitoring with change detection</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Role-based access, audit trail and PDF reports</li>
+        </ul>
+    </section>
+    <section class="auth-form">
+        <h2>Sign in</h2>
+        <p class="lead">Every request is authenticated and authorized.</p>
+        <div id="message" hidden></div>
+        <form id="loginForm" novalidate>
+            <div class="field">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username" maxlength="50" required>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" maxlength="128" required>
+            </div>
+            <button class="btn btn-primary" type="submit" id="submitBtn">Sign in</button>
+        </form>
+        <p class="auth-foot" id="registerLink">New user? <a href="/register.html">Create an account</a></p>
+        <p class="auth-foot">Authorized use only. All activity is logged.</p>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request access | Zero Trust</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/common.js" defer></script>
+    <script src="/js/login.js" defer></script>
+</head>
+<body class="auth-body" data-page="register">
+<div class="auth-wrap">
+    <section class="auth-hero">
+        <div class="brand">
+            <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><div class="brand-name">ZERO TRUST</div><div class="brand-tag">Website Security Platform</div></div>
+        </div>
+        <h1>Request<br><span>analyst access.</span></h1>
+        <p>New accounts are created with the ANALYST role and stay disabled until an administrator approves them. Administrators then grant access to specific websites.</p>
+    </section>
+    <section class="auth-form">
+        <h2>Create account</h2>
+        <p class="lead">New accounts are reviewed and approved by an administrator before you can sign in.</p>
+        <div id="message" hidden></div>
+        <form id="registerForm" novalidate>
+            <div class="field">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username" maxlength="50" required>
+            </div>
+            <div class="field">
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" maxlength="100">
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="120">
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" maxlength="128" required>
+                <div class="help">At least 8 characters with upper-case, lower-case, a digit and a special character.</div>
+            </div>
+            <div class="field">
+                <label for="confirm">Confirm password</label>
+                <input id="confirm" name="confirm" type="password" autocomplete="new-password" maxlength="128" required>
+            </div>
+            <button class="btn btn-primary" type="submit" id="submitBtn">Submit registration</button>
+        </form>
+        <p class="auth-foot"><a href="/login.html">Back to sign in</a></p>
+    </section>
+</div>
+</body>
+</html>
